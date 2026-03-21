@@ -7,4 +7,10 @@
     <priority>1.0</priority>
   </url>
 
+  <url>
+    <loc>https://stephenmdick.com/enterprise-reliability-reform-case-study</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
 </urlset>
