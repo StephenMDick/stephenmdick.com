@@ -36,10 +36,6 @@
   <meta property="og:profile:last_name" content="Dick">
   <meta property="og:profile:username" content="stephenmdick">
 
-  <!-- ============================================================
-       STRUCTURED DATA BLOCK 1: WebSite Entity
-       Tells Google this domain is a structured identity source.
-       ============================================================ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -54,12 +50,6 @@
   }
   </script>
 
-  <!-- ============================================================
-       STRUCTURED DATA BLOCK 2: Person Entity
-       Core identity record. sameAs links are critical for entity
-       resolution — they instruct Google to merge these URLs into
-       one knowledge graph node.
-       ============================================================ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -94,6 +84,12 @@
       },
       {
         "@type": "Organization",
+        "name": "SAP",
+        "url": "https://www.sap.com",
+        "sameAs": "https://en.wikipedia.org/wiki/SAP"
+      },
+      {
+        "@type": "Organization",
         "name": "BetterCloud",
         "url": "https://www.bettercloud.com"
       }
@@ -102,7 +98,18 @@
       {
         "@type": "Organization",
         "name": "FinOps Foundation",
-        "url": "https://www.finops.org"
+        "url": "https://www.finops.org",
+        "sameAs": "https://en.wikipedia.org/wiki/FinOps_Foundation"
+      },
+      {
+        "@type": "Organization",
+        "name": "DevOps Institute Silicon Valley",
+        "description": "President — Silicon Valley chapter of the DevOps Institute"
+      },
+      {
+        "@type": "Organization",
+        "name": "CIO Executive Council",
+        "description": "Member of the CIO Executive Council in the US"
       }
     ],
     "knowsAbout": [
@@ -156,17 +163,27 @@
     ]
   }
   </script>
-
-  <!-- ============================================================
-       STRUCTURED DATA BLOCK 3: Published Articles
-       Each article reinforces Stephen Dick as an authority in
-       these topic domains. Keywords in "about" and "keywords"
-       fields are weighted by AI systems for expertise signals.
-       ============================================================ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
+      {
+        "@type": "Article",
+        "headline": "What Actually Changes When Reliability Becomes a Board-Level Problem",
+        "url": "https://www.cio.com/article/4149405/what-actually-changes-when-reliability-becomes-a-board-level-problem.html",
+        "author": {
+          "@type": "Person",
+          "@id": "https://stephenmdick.com/#person",
+          "name": "Stephen M. Dick"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "CIO",
+          "url": "https://www.cio.com"
+        },
+        "about": ["Enterprise Reliability", "Board-Level Technology Strategy", "Site Reliability Engineering", "Engineering Leadership"],
+        "keywords": "enterprise reliability, board-level reliability, SRE, technology strategy, engineering leadership"
+      },
       {
         "@type": "Article",
         "headline": "The Genesis Gamble: Creating Order from Chaos in the Age of AI",
@@ -287,11 +304,6 @@
   }
   </script>
 
-  <!-- ============================================================
-       STRUCTURED DATA BLOCK 4: Podcast Episodes & Speaking Events
-       PodcastEpisode + Event schema helps AI systems associate
-       Stephen Dick with speaking authority in these domains.
-       ============================================================ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -355,12 +367,6 @@
     ]
   }
   </script>
-
-  <!-- ============================================================
-       STRUCTURED DATA BLOCK 5: Industry Contributions
-       Associating Stephen Dick with FinOps Foundation working
-       groups as a CreativeWork contributor.
-       ============================================================ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -530,6 +536,10 @@
   <section>
     <h2>Articles &amp; Writing</h2>
     <ul>
+      <li>
+        <a href="https://www.cio.com/article/4149405/what-actually-changes-when-reliability-becomes-a-board-level-problem.html">What Actually Changes When Reliability Becomes a Board-Level Problem</a>
+        <br><span class="meta">CIO · Enterprise Reliability · Engineering Leadership</span>
+      </li>
       <li>
         <a href="https://www.cio.com/article/4132853/the-genesis-gamble-creating-order-from-chaos-in-the-age-of-ai.html">The Genesis Gamble: Creating Order from Chaos in the Age of AI</a>
         <br><span class="meta">CIO · AI Strategy · Enterprise AI</span>
