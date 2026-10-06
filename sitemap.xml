@@ -3,12 +3,14 @@
 
   <url>
     <loc>https://stephenmdick.com/</loc>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://stephenmdick.com/enterprise-reliability-reform-case-study</loc>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
